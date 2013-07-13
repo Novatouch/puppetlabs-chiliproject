@@ -13,7 +13,7 @@
 class chiliproject {
   include chiliproject::data
 
-  $packages = [ 'ruby', 'postgresql', 'postgresql-client', 'postgresql-server-dev-8.4', 'libmagick9-dev' ]
+  $packages = [ 'ruby', 'postgresql', 'postgresql-client', 'postgresql-server-dev-9.1', 'libmagickwand-dev' ]
   package { $packages:
     ensure => present,
   }
